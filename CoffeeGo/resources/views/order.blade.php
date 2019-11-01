@@ -4,6 +4,9 @@
 <head>
 
   <title> Bestellen </title>
+<!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="test.css" rel="stylesheet" type="text/css">
 
 <style>
 
@@ -12,12 +15,6 @@ margin:0;
 padding:0;
 background: 0;
 font-family:Helvetica;
-}
-
-.nav{
-  overflow: hidden;
-  background:rgb(115, 175, 115);
-  border:#97552f 6px solid;
 }
 
 .logo{
@@ -134,33 +131,42 @@ font-family:Helvetica;
 .input li{
 font-size:20px;
 }
+.footer{
+  margin-top:35%;
+  border-top:#97552f 6px solid;
+  background:rgb(48, 44, 44);
+  height:100%;
+  color:rgb(177, 169, 169);
+}
 </style>
 
 </head>
 
 <body>
 
-<div class = "nav">
-  <div class = "container">
-
-    <div class = "nav_logo">
-          <img src = "pictures/logo.png" alt="" class = "logo">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;"> 
+  <!-- <nav class="navigatie"> -->
+    <a class="navbar-brand" href="#" ><img src="logocoffeego2.png" height="50" width="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse" >
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="/order">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/order">Bestel <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+                <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+      </ul>
     </div>
-
-      <div class = "nav_tandwiel">
-          <a href = "#"><img src = "pictures/instellingen.png" alt="" class = "tandwiel"></a>
-      </div>
-
-        <div class = "nav_links">
-          <ul class = "buttons">
-            <li><a href = "/"> Home</a></li>
-            <li><a href = "/order"> Bestellen</a></li>
-            <li style="margin-left:20px;"><a href = "#"> Menu</a></li>
-          </ul> 
-        </div>
-
-  </div>
-</div>
+  </nav>
+</header>
 
 <div class = "Header">
   <h1 class = "kop">Koffie Bestellen</h1>
@@ -190,6 +196,13 @@ font-size:20px;
   <div class = "text">
     <img src = "pictures/Coffee2.png" style = "width :100%; height:100%; " ></a>
   </div>
+  <footer class = "footer">
+    <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
+    <p >&copy; 2017-2019 Company, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
+    <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
+    <p><img src="website berkay/Facebook.png" height="50" width="50"> <img src="website berkay/instagram.png" height="40" width="40"> <img src="website berkay/twitter.png" height="50" width="50"><p> 
+  
+  </footer>
 </body>
  
 </html>
