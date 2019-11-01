@@ -74,19 +74,12 @@ font-family:Helvetica;
   white-space: nowrap;
 }
 
-.streep{
-  margin-top:-20px;
-  height:6px;
-  width:87%;
-  border:none;
-  background:#97552f;
-}
-
 .content{
   float:left;
-  border:#97552f 6px solid;
   margin-left:6%;
+  margin-top:5px;
   width:42%;
+  border:black 1px solid;
 }
 
 .button{
@@ -108,18 +101,21 @@ font-family:Helvetica;
   margin-right:6%;
   width:42%;
   height:100%;
-  border:#97552f 6px solid;
   text-align:center;
   background:#97552f;
+  margin-top:-50px;
+}
+
+.input ul{
+  margin-bottom:-20px;
 }
 
 .text{
   height:233px;
   float:left;
   margin-left:6%;
-  margin-top:16px;
+  margin-top:5px;
   width:42%;
-  border:#97552f 6px solid;
   font-size:80px;
   text-align:center;
 }
@@ -148,10 +144,7 @@ font-size:20px;
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;">
   <!-- <nav class="navigatie"> -->
     <a class="navbar-brand" href="#" ><img src="{{ asset('/img/logocoffeego2.png') }}" height="50" width="50"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse" >
+    <div  >
       <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -159,20 +152,18 @@ font-size:20px;
         <li class="nav-item active">
           <a class="nav-link" href="/order">Bestel <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-                <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
-        </li>
-        </li>
       </ul>
     </div>
   </nav>
 </header>
 
-<div class = "Header">
-  <h1 class = "kop">Koffie Bestellen</h1>
-  <hr class = "streep">
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+<div>
   <div class = "content">
     <form class = "input">
       <ul>
@@ -183,12 +174,21 @@ font-size:20px;
             <input type = "number" id = "ResultAge"></li><br>
           <li>Tafel nummer :<br>
             <input type = "number" id = "ResultAge"></li><br>
+            <li>Menu :<br>           
+            Koffie : <input type = "radio" name = "1">
+            Cappuccino : <input type = "radio" name = "1">
+            Espresso : <input type = "radio" name = "1"></li>
           <div>
             <input type = "submit" value = "Submit" class = "button" >
           </div>
       </ul>
     </form>
   </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
 
   <div class = "images">
     <img src = "{{ asset('/img/Coffee.png') }}" style = "width :100%; height:100%; " ></a>
@@ -197,6 +197,8 @@ font-size:20px;
   <div class = "text">
     <img src = "{{ asset('/img/Coffee2.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
+</div>
+
   <footer class = "footer">
     <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
     <p >&copy; 2017-2019 Company, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
