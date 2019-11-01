@@ -34,7 +34,14 @@ class OrdersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'table' => 'required',
+        ]);
+        $order = new Order;
+        $order->table = $request->input('table');
+        $order->save();
+
+        return redirect('/welcome');
     }
 
     /**
