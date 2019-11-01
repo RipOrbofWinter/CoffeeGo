@@ -79,6 +79,7 @@ font-family:Helvetica;
   margin-left:6%;
   margin-top:5px;
   width:42%;
+  height:80%;
   border:black 1px solid;
 }
 
@@ -134,6 +135,7 @@ font-size:20px;
   height:100%;
   color:rgb(177, 169, 169);
 }
+
 </style>
 
 </head>
