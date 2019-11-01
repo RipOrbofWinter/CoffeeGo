@@ -74,19 +74,12 @@ font-family:Helvetica;
   white-space: nowrap;
 }
 
-.streep{
-  margin-top:-20px;
-  height:6px;
-  width:87%;
-  border:none;
-  background:#97552f;
-}
-
 .content{
   float:left;
-  border:#97552f 6px solid;
   margin-left:6%;
+  margin-top:5px;
   width:42%;
+  border:black 1px solid;
 }
 
 .button{
@@ -108,18 +101,20 @@ font-family:Helvetica;
   margin-right:6%;
   width:42%;
   height:100%;
-  border:#97552f 6px solid;
   text-align:center;
   background:#97552f;
+}
+
+.input ul{
+  margin-bottom:-20px;
 }
 
 .text{
   height:233px;
   float:left;
   margin-left:6%;
-  margin-top:16px;
+  margin-top:5px;
   width:42%;
-  border:#97552f 6px solid;
   font-size:80px;
   text-align:center;
 }
@@ -168,11 +163,13 @@ font-size:20px;
   </nav>
 </header>
 
-<div class = "Header">
-  <h1 class = "kop">Koffie Bestellen</h1>
-  <hr class = "streep">
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+<div>
   <div class = "content">
     <form class = "input">
       <ul>
@@ -189,6 +186,8 @@ font-size:20px;
     </form>
   </div>
 
+  <br>
+
   <div class = "images">
     <img src = "{{ asset('/img/Coffee.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
@@ -196,6 +195,8 @@ font-size:20px;
   <div class = "text">
     <img src = "{{ asset('/img/Coffee2.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
+</div>
+
   <footer class = "footer">
     <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
     <p >&copy; 2017-2019 Company, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
