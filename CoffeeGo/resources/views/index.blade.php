@@ -39,7 +39,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;">
   <!-- <nav class="navigatie"> -->
-    <a class="navbar-brand" href="#" ><img src="logocoffeego2.png" height="50" width="50"></a>
+    <a class="navbar-brand" href="#" ><img src="{{ asset('/img/logocoffeego2.png') }}" height="50" width="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -149,7 +149,7 @@
     <p class="float-right"><a href="#">Back to top</a></p>
     <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
-    <p><img src="Facebook.png" height="50" width="50"> <img src="instagram.png" height="40" width="40"> <img src="twitter.png" height="50" width="50"><p>
+    <p><img src="{{ asset('/img/Facebook.png') }}" height="50" width="50"> <img src="{{ asset('/img/instagram.png') }}" height="40" width="40"> <img src="{{ asset('/img/twitter.png') }}" height="50" width="50"><p>
   </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
