@@ -155,8 +155,8 @@
     <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
     <p >&copy; 2017-2019 Company, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
     <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
-    <p><img src="website berkay/Facebook.png" height="50" width="50"> <img src="website berkay/instagram.png" height="40" width="40"> <img src="website berkay/twitter.png" height="50" width="50"><p> 
-  
+    <p><img src="{{ asset('/img/Facebook.png') }}" height="50" width="50"> <img src="{{ asset('/img/instagram.png') }}" height="40" width="40"> <img src="{{ asset('/img/twitter.png') }}" height="50" width="50"><p>
+
   </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
