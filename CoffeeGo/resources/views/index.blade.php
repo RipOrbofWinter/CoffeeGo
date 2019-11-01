@@ -30,14 +30,14 @@
         }
       }
 
-      
+
     </style>
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body >
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;"> 
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;">
   <!-- <nav class="navigatie"> -->
     <a class="navbar-brand" href="#" ><img src="logocoffeego2.png" height="50" width="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,7 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-        <div class="row"> 
+        <div class="row">
             <br>
             <br>
             <br>
@@ -75,22 +75,22 @@
     <div class="row">
       <div class="col-lg-4">
        <!---- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <img src="logocoffeego2.png" height="335" width="350">
+        <img src="{{ asset('/img/logocoffeego2.png') }}"  height="335" width="350">
         <h2>CoffeeGo</h2>
         <p>CoffeeGo maakt je leven een stuk makkelijker</p>
         <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
        <!---- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <img  src="koffiesmaak.jpg" height="335" width="350">
+        <img src="{{ asset('/img/koffiesmaak.jpg') }}" height="335" width="350">
         <h2>Heerlijke smaak</h2>
         <p>Onze koffie is fucking lekker man</p>
         <!-- <p><a class="btn btn-secondary" href="#" role="button" style="background-color:rgb(115, 175, 115) !important;">View details &raquo;</a></p> -->
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="bestelkoffie.jpg" height="335" width="350">
+        <img src="{{ asset('/img/bestelkoffie.jpg') }}" height="335" width="350">
         <h2>Bestel koffie nu</h2>
-        <p><a class="btn btn-secondary" href="#" role="button">Bestel nu &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="/order" role="button">Bestel nu &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -105,7 +105,7 @@
         <p class="lead">CoffeGo is een robot die koffie kan bezorgen. Met een druk op een knop wordt de koffie bezorgd zonder dat je hoeft op te staan. </p>
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="bezorger.jpg">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/bezorger.jpg') }}">
       </div>
     </div>
 
@@ -117,8 +117,8 @@
         <p class="lead">De smaak van onze koffie is heel speciaal en heerlijk. Het komt uit afrika en is van top kwaliteit.</p>
       </div>
       <div class="col-md-5 order-md-1">
-       
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="koffiebonen.jpg">
+
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="{{ asset('/img/koffiebonen.jpg') }}">
       </div>
     </div>
 
@@ -130,7 +130,7 @@
         <p class="lead">Onze koffie is top kwaliteit door de kwaliteit van onze bonen en onze extra geheime ingredienten.</p>
       </div>
       <div class="col-md-5">1
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="duim.jpg">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/duim.jpg') }}">
       </div>
     </div>
 
@@ -146,7 +146,7 @@
     <p class="float-right"><a href="#">Back to top</a></p>
     <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
-    <p><img src="Facebook.png" height="50" width="50"> <img src="instagram.png" height="40" width="40"> <img src="twitter.png" height="50" width="50"><p> 
+    <p><img src="Facebook.png" height="50" width="50"> <img src="instagram.png" height="40" width="40"> <img src="twitter.png" height="50" width="50"><p>
   </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
