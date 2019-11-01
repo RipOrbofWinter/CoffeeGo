@@ -175,7 +175,7 @@ font-size:20px;
             <input type = "number" id = "ResultAge"></li><br>
           <li>Tafel nummer :<br>
             <input type = "number" id = "ResultAge"></li><br>
-            <li>Menu :<br>           
+            <li>Menu :<br>
             Koffie : <input type = "radio" name = "1">
             Cappuccino : <input type = "radio" name = "1">
             Espresso : <input type = "radio" name = "1"></li>
