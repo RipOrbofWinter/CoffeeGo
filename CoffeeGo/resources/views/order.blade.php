@@ -177,6 +177,7 @@ font-size:20px;
     <form class = "input">
       <ul>
           <li>Naam :<br>
+              echo Form::radio('category_id', '1'); //  '1' === '1' - comparing passed value and old session value
             <input type = "text" id = "ResultName"></li><br>
           <li>Leeftijd :<br>
             <input type = "number" id = "ResultAge"></li><br>
