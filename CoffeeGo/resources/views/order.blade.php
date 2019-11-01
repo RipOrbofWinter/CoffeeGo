@@ -167,16 +167,31 @@ font-size:20px;
   <div class = "content">
     <form class = "input">
       <ul>
-          <li>Naam :<br>
+        {!! Form::open(['url' => 'foo/bar']) !!}
+          {!! Form::label('Naam :') !!}
+          {!! Form::text('name', 'naam'); !!}
+
+          {!! Form::label('leeftijd :') !!}
+          {!! Form::number('name', 'value'); !!}
+
+          {!! Form::label('Tafel nummer :') !!}
+          {!! Form::number('name', 'value'); !!}
+
+          {!! Form::label('Menu :') !!}
+          {!! Form::radio('Menu', 'koffie'); !!}
+          {!! Form::radio('Menu', 'cappuccino '); !!}
+          {!! Form::radio('Menu', 'espresso '); !!}
+        {!! Form::close() !!} 
+          <!-- <li>Naam :<br>
             <input type = "text" id = "ResultName"></li><br>
           <li>Leeftijd :<br>
             <input type = "number" id = "ResultAge"></li><br>
           <li>Tafel nummer :<br>
-            <input type = "number" id = "ResultAge"></li><br>
-            <li>Menu :<br>
+            <input type = "number" id = "ResultAge"></li><br> -->
+            <!-- <li>Menu :<br>
             Koffie : <input type = "radio" name = "1">
             Cappuccino : <input type = "radio" name = "1">
-            Espresso : <input type = "radio" name = "1"></li>
+            Espresso : <input type = "radio" name = "1"></li> -->
           <div>
             <input type = "submit" value = "Submit" class = "button" >
           </div>
