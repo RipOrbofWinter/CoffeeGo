@@ -93,7 +93,7 @@
        <!---- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <img src="{{ asset('/img/koffiesmaak.jpg') }}" height="335" width="350">
         <h2>Heerlijke smaak</h2>
-        <p>Onze koffie is fucking lekker man</p>
+        <p>Onze koffie heeft een eerlijke smaak.</p>
         <!-- <p><a class="btn btn-secondary" href="#" role="button" style="background-color:rgb(115, 175, 115) !important;">View details &raquo;</a></p> -->
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -111,7 +111,9 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">CoffeeGo <span class="text-muted">Hoe werkt het?</span></h2>
-        <p class="lead">CoffeGo is een robot die koffie kan bezorgen. Met een druk op een knop wordt de koffie bezorgd zonder dat je hoeft op te staan. </p>
+        <p class="lead">CoffeGo is een robot die koffie kan bezorgen.
+            Alles wat je hoeft te doen is je gegevens en je tafel nummer in te vullen in onze bestel page
+            en onze robot doet de rest van het werk. </p>
       </div>
       <div class="col-md-5">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/bezorger.jpg') }}">
@@ -123,7 +125,11 @@
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Onze koffiebonen <span class="text-muted">Waar komt het vandaan?</span></h2>
-        <p class="lead">De smaak van onze koffie is heel speciaal en heerlijk. Het komt uit afrika en is van top kwaliteit.</p>
+        <p class="lead">We gebruiken de black ivory koffiebonen.
+            Black ivory koffiebonen zijn heel zeldzaam en een van de duurste koffiebonen van de wereld omdat de koffiebonen erg schaars zijn.<br />
+            De koffiebonen van Black Ivory worden namelijk opgegeten door olifanten.
+            In de maag worden de enzymen in de koffie afgebroken voor een robuuste smaak.
+            Vervolgens wordt de poep gebruikt om een van de meest zeldzaamste kopjes koffie ter wereld te zetten.</p>
       </div>
       <div class="col-md-5 order-md-1">
 
@@ -135,11 +141,14 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Heerlijke smaak <span class="text-muted">De ingredienten</span></h2>
-        <p class="lead">Onze koffie is top kwaliteit door de kwaliteit van onze bonen en onze extra geheime ingredienten.</p>
+        <h2 class="featurette-heading">Razend snel</h2>
+        <p class="lead">We hebben in een groep van vijf heel lang nagedacht over hoe we de perfecte robot konden maken.
+            We hebben gekeken naar heel veel mogelijke opties.
+            Na veel discusseren over de mogelijkheden hebben we de perfecte koffiezet robot gebouwd.
+            Gelijk na het drukken van een knop gaat de robot in werking en binnen drie minuten staat de koffie bij je tafel.</p>
       </div>
-      <div class="col-md-5">1
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/duim.jpg') }}">
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/kopje.jpg') }}">
       </div>
     </div>
 

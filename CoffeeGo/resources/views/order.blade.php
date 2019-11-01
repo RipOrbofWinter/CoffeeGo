@@ -145,9 +145,9 @@ font-size:20px;
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;"> 
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;">
   <!-- <nav class="navigatie"> -->
-    <a class="navbar-brand" href="#" ><img src="logocoffeego2.png" height="50" width="50"></a>
+    <a class="navbar-brand" href="#" ><img src="{{ asset('/img/logocoffeego2.png') }}" height="50" width="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -190,19 +190,19 @@ font-size:20px;
   </div>
 
   <div class = "images">
-    <img src = "pictures/Coffee.png" style = "width :100%; height:100%; " ></a>
+    <img src = "{{ asset('/img/Coffee.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
 
   <div class = "text">
-    <img src = "pictures/Coffee2.png" style = "width :100%; height:100%; " ></a>
+    <img src = "{{ asset('/img/Coffee2.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
   <footer class = "footer">
     <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
     <p >&copy; 2017-2019 Company, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
     <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
-    <p><img src="website berkay/Facebook.png" height="50" width="50"> <img src="website berkay/instagram.png" height="40" width="40"> <img src="website berkay/twitter.png" height="50" width="50"><p> 
-  
+    <p><img src="{{ asset('/img/Facebook.png') }}" height="50" width="50"> <img src="{{ asset('/img/instagram.png') }}" height="40" width="40"> <img src="{{ asset('/img/twitter.png') }}" height="50" width="50"><p>
+
   </footer>
 </body>
- 
+
 </html>
