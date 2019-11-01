@@ -103,6 +103,7 @@ font-family:Helvetica;
   height:100%;
   text-align:center;
   background:#97552f;
+  margin-top:-50px;
 }
 
 .input ul{
@@ -143,20 +144,13 @@ font-size:20px;
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;">
   <!-- <nav class="navigatie"> -->
     <a class="navbar-brand" href="#" ><img src="{{ asset('/img/logocoffeego2.png') }}" height="50" width="50"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse" >
+    <div  >
       <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="/order">Bestel <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-                <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
-        </li>
         </li>
       </ul>
     </div>
@@ -179,6 +173,10 @@ font-size:20px;
             <input type = "number" id = "ResultAge"></li><br>
           <li>Tafel nummer :<br>
             <input type = "number" id = "ResultAge"></li><br>
+            <li>Menu :<br>           
+            Koffie : <input type = "radio" name = "1">
+            Cappuccino : <input type = "radio" name = "1">
+            Espresso : <input type = "radio" name = "1"></li>
           <div>
             <input type = "submit" value = "Submit" class = "button" >
           </div>
@@ -186,6 +184,9 @@ font-size:20px;
     </form>
   </div>
 
+  <br>
+  <br>
+  <br>
   <br>
 
   <div class = "images">
