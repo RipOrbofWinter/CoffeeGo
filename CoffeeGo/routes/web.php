@@ -10,7 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//static pages
+Route::get('/', 'PagesController@index');
+Route::get('/welcome', 'PagesController@welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// interesting stuff
+Route::get('/order', 'OrdersController@index');
+
+
+//whatever you do dont touch these 2 lines
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+//
