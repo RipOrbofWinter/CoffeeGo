@@ -93,7 +93,7 @@
        <!---- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <img src="{{ asset('/img/koffiesmaak.jpg') }}" height="335" width="350">
         <h2>Heerlijke smaak</h2>
-        <p>Onze koffie heeft een eerlijke smaak.</p>
+        <p>Onze koffie gebruikt zeldzame bonen waardoor het een lekkere smaak heeft.</p>
         <!-- <p><a class="btn btn-secondary" href="#" role="button" style="background-color:rgb(115, 175, 115) !important;">View details &raquo;</a></p> -->
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -111,9 +111,9 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">CoffeeGo <span class="text-muted">Hoe werkt het?</span></h2>
-        <p class="lead">CoffeGo is een robot die koffie kan bezorgen.
-            Alles wat je hoeft te doen is je gegevens en je tafel nummer in te vullen in onze bestel page
-            en onze robot doet de rest van het werk. </p>
+        <p class="lead">CoffeeGo is een robot die koffie kan bezorgen.
+            Je hoeft alleen je naam, leeftijd en tafel nummer in te vullen in de bestel page
+            en CoffeeGo doet de rest van het werk. </p>
       </div>
       <div class="col-md-5">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/bezorger.jpg') }}">
@@ -142,10 +142,9 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Razend snel</h2>
-        <p class="lead">We hebben in een groep van vijf heel lang nagedacht over hoe we de perfecte robot konden maken.
-            We hebben gekeken naar heel veel mogelijke opties.
-            Na veel discusseren over de mogelijkheden hebben we de perfecte koffiezet robot gebouwd.
-            Gelijk na het drukken van een knop gaat de robot in werking en binnen drie minuten staat de koffie bij je tafel.</p>
+        <p class="lead">We zijn in een groep van vijf lang gaan nadenken over hoe we de perfecte robot konden maken.
+            Er is gekeken naar een aantal mogelijke opties waardoor we de perfecte koffiezet robot hebben gebouwd.
+            Gelijk na het drukken van een knop gaat de robot in werking en binnen drie minuten staat de koffie bij uw tafel.</p>
       </div>
       <div class="col-md-5">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{{ asset('/img/kopje.jpg') }}">

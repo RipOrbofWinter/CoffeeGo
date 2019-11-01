@@ -16,8 +16,13 @@ class CreateOrdersTable extends Migration
         // Not done, reqeures designing controller
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('coffee');
             $table->string('name');
+            $table->string('age');
+            $table->string('tablenumber');
+            $table->string('classroom');
             $table->timestamps();
+
         });
     }
 
