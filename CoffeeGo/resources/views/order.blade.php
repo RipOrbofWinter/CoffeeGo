@@ -85,7 +85,7 @@ font-family:Helvetica;
 
 .button{
   float:right;
-  margin-top:-120px;
+  margin-top:-70px;
   font-size:40px;
   border:#97552f 8px solid;
   color:#fff;
@@ -169,10 +169,11 @@ form{
 <br>
 <br>
 <br>
-
 <div>
   <div class = "content">
-        {!! Form::open(['url' => 'foo/bar']) !!}
+        {!! Form::open(['action' => 'OrdersController@store', 'method' => 'POST']) !!}
+        {{ csrf_field() }}
+
           {!! Form::label('Naam :') !!}
           {!! Form::text('name', '', ['class', 'ResultName']); !!}
           <br>
@@ -180,23 +181,17 @@ form{
           {!! Form::number('age', 'value'); !!}
           <br>
           {!! Form::label('Tafelnummer :') !!}
-          {!! Form::number('table', 'value'); !!}
+          {!! Form::number('tablenumber', 'value'); !!}
           <br>
           {!! Form::label('Menu :') !!}
-          {!! Form::radio('Menu', 'koffie'); !!}
+          {!! Form::radio('menu', 'koffie', true); !!}
           {!! Form::label('Koffie  ') !!}
-          {!! Form::radio('Menu', 'cappuccino '); !!}
+          {!! Form::radio('menu', 'cappuccino '); !!}
           {!! Form::label('Cappuccino  ') !!}
-          {!! Form::radio('Menu', 'espresso '); !!}
+          {!! Form::radio('menu', 'espresso '); !!}
           {!! Form::label('Espresso  ') !!} 
           {!! Form::submit('Versturen', ['class' => 'button']); !!}
         {!! Form::close() !!} 
-          <!-- <li>Naam :<br>
-            <input type = "text" id = "ResultName"></li><br>
-          <li>Leeftijd :<br>
-            <input type = "number" id = "ResultAge"></li><br>
-          <li>Tafel nummer :<br>
-            <input type = "number" id = "ResultAge"></li><br> -->
   </div>
 
   <br>
