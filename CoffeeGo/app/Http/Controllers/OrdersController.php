@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use App\Prototype;
 
 class OrdersController extends Controller
 {
@@ -39,6 +40,11 @@ class OrdersController extends Controller
             'tablenumber' => 'required',
             'menu' => 'required',
         ]);
+
+        $prototype = new Prototype;
+        $prototype->table = $request->input('tablenumber');
+        $prototype->save();
+
         $order = new Order;
         $order->name = $request->input('name');
         $order->age = $request->input('age');
