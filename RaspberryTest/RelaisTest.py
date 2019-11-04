@@ -13,10 +13,10 @@ GPIO.setup(DCMOTORRF, GPIO.OUT) # GPIO Assign mode
 GPIO.setup(DCMOTORRR, GPIO.OUT) # GPIO Assign mode
 
 while True:
-    GPIO.output(DCMOTORLF, GPIO.LOW) # out
+   # GPIO.output(DCMOTORLF, GPIO.LOW) # out
     #GPIO.output(DCMOTORLF, GPIO.HIGH) # on
 
-    GPIO.output(DCMOTORLR, GPIO.LOW) # out
+   # GPIO.output(DCMOTORLR, GPIO.LOW) # out
     #GPIO.output(DCMOTORLR, GPIO.HIGH)
     
     GPIO.output(DCMOTORRF, GPIO.LOW) # out
@@ -25,18 +25,18 @@ while True:
     GPIO.output(DCMOTORRR, GPIO.LOW) # out
     #GPIO.output(DCMOTORRR, GPIO.HIGH) # on
     
-    time.sleep(0.5)
+    time.sleep(0.1)
     
     #GPIO.output(DCMOTORLF, GPIO.LOW) # out
-    GPIO.output(DCMOTORLF, GPIO.HIGH) # on
+    #GPIO.output(DCMOTORLF, GPIO.HIGH) # on
     
     #GPIO.output(DCMOTORLR, GPIO.LOW) # out
-    GPIO.output(DCMOTORLR, GPIO.HIGH) # on
+    #GPIO.output(DCMOTORLR, GPIO.HIGH) # on
 
     #GPIO.output(DCMOTORRF, GPIO.LOW) # out
     GPIO.output(DCMOTORRF, GPIO.HIGH) # on
 
     #GPIO.output(DCMOTORRR, GPIO.LOW) # out
-    GPIO.output(DCMOTORRR, GPIO.HIGH) # on
+   # GPIO.output(DCMOTORRR, GPIO.HIGH) # on
     
-    time.sleep(0.5)
+    time.sleep(0.05)

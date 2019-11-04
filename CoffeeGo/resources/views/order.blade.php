@@ -232,7 +232,6 @@ form{
           {!! Form::label('Naam :') !!}
           {!! Form::text('name', '', ['class', 'ResultName']); !!}
           <br>
-
           {!! Form::label('Leeftijd :') !!}
           {!! Form::number('age', 'value'); !!}
           <br>
