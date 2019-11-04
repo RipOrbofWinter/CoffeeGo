@@ -177,7 +177,7 @@ form{
           {!! Form::label('Naam :') !!}
           {!! Form::text('name', '', ['class', 'ResultName']); !!}
           <br>
-          {!! Form::label('leeftijd :') !!}
+          {!! Form::label('Leeftijd :') !!}
           {!! Form::number('age', 'value'); !!}
           <br>
           {!! Form::label('Tafelnummer :') !!}
@@ -189,9 +189,9 @@ form{
           {!! Form::radio('menu', 'cappuccino '); !!}
           {!! Form::label('Cappuccino  ') !!}
           {!! Form::radio('menu', 'espresso '); !!}
-          {!! Form::label('Espresso  ') !!} 
+          {!! Form::label('Espresso  ') !!}
           {!! Form::submit('Versturen', ['class' => 'button']); !!}
-        {!! Form::close() !!} 
+        {!! Form::close() !!}
   </div>
 
   <br>
