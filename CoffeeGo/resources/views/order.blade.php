@@ -1,13 +1,8 @@
-<!doctype html>
-<html>
+@extends('layouts.app')
 
-<head>
-
+@section('header')
   <title> Bestellen </title>
 <!-- Bootstrap core CSS -->
-<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="test.css" rel="stylesheet" type="text/css">
-
 <style>
 
 
@@ -283,14 +278,6 @@ form{
     <img src = "{{ asset('/img/Coffee2.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
 </div>
-
-  <footer class = "footer">
-    <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
-    <p >&copy; 2017-2019 CoffeeGo, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
-    <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
-    <img src="{{ asset('/img/Facebook.png') }}" height="50" width="50"> <img src="{{ asset('/img/instagram.png') }}" height="40" width="40"> <img src="{{ asset('/img/twitter.png') }}" height="50" width="50">
-
-  </footer>
 </body>
 
 </html>
