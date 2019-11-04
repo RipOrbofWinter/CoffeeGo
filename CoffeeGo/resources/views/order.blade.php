@@ -85,7 +85,7 @@ font-family:Helvetica;
 
 .button{
   float:right;
-  margin-top:-70px;
+  margin-top:-120px;
   font-size:40px;
   border:#97552f 8px solid;
   color:#fff;
@@ -177,11 +177,12 @@ form{
           {!! Form::label('Naam :') !!}
           {!! Form::text('name', '', ['class', 'ResultName']); !!}
           <br>
+<<<<<<< HEAD
           {!! Form::label('Leeftijd :') !!}
           {!! Form::number('age', 'value'); !!}
           <br>
           {!! Form::label('Tafelnummer :') !!}
-          {!! Form::number('tablenumber', 'value'); !!}
+          {!! Form::number('tablenumber', 'value', ['min' => '1', 'max' => '10', 'style' => 'width: 134px;']); !!}
           <br>
           {!! Form::label('Menu :') !!}
           {!! Form::radio('menu', 'koffie', true); !!}
