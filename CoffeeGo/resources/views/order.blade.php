@@ -10,11 +10,13 @@
 
 <style>
 
+
 body{
-margin:0;
-padding:0;
-background: 0;
-font-family:Helvetica;
+    margin:0;
+    padding:0;
+    background: 0;
+    font-family:Helvetica;
+
 }
 
 .logo{
@@ -81,15 +83,18 @@ font-family:Helvetica;
   width:42%;
   height:80%;
   border:black 1px solid;
+  position: relative;
 }
 
 .button{
   float:right;
-  margin-top:-120px;
   font-size:40px;
   border:#97552f 8px solid;
   color:#fff;
   background:#97552f;
+  position: absolute;
+  top: 43px;
+  right: 10px;
 }
 
 .button:hover {
@@ -103,7 +108,8 @@ font-family:Helvetica;
   height:100%;
   text-align:center;
   background:#97552f;
-  margin-top:-50px;
+
+    object-fit: cover;
 }
 
 .input ul{
@@ -128,10 +134,10 @@ font-family:Helvetica;
 font-size:20px;
 }
 .footer{
-  margin-top:35%;
+  margin-top: 35%;
   border-top:#97552f 6px solid;
   background:rgb(48, 44, 44);
-  height:100%;
+  height:176px;
   color:rgb(177, 169, 169);
 }
 
@@ -141,6 +147,55 @@ font-size:20px;
 form{
   padding: 15px;
 }
+
+    /*Responsive css ivo*/
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    .button {
+        font-size: 25px;
+
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    .content{
+        float:left;
+        margin-left:20%;
+        width:60%;
+    }
+
+    .images, .text{
+        width: 60%;
+        float:left;
+        margin-left:20%;
+        margin-top: 50px;
+    }
+
+    .footer {
+        margin-top: 110%;
+
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .content {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .images{
+        height: 300px;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .text
+    {
+        height: 200px;
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
 </style>
 
 </head>
@@ -177,7 +232,7 @@ form{
           {!! Form::label('Naam :') !!}
           {!! Form::text('name', '', ['class', 'ResultName']); !!}
           <br>
-<<<<<<< HEAD
+
           {!! Form::label('Leeftijd :') !!}
           {!! Form::number('age', 'value'); !!}
           <br>
@@ -211,7 +266,7 @@ form{
 
   <footer class = "footer">
     <p class="float-right" style = "float:right; margin-right:3%;"><a href="#" style = "text-decoration:none; color:rgb(243, 204, 137);">Back to top</a></p>
-    <p >&copy; 2017-2019 Company, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
+    <p >&copy; 2017-2019 CoffeeGo, Inc. &middot; <a href="#" style = "text-decoration:none;color:rgb(243, 204, 137);">Privacy</a> &middot; <a href="#" style = "color:rgb(243, 204, 137);text-decoration:none;">Terms</a></p>
     <p>Maurits, Tim, Ivo, Thomas, Berkay</p>
     <img src="{{ asset('/img/Facebook.png') }}" height="50" width="50"> <img src="{{ asset('/img/instagram.png') }}" height="40" width="40"> <img src="{{ asset('/img/twitter.png') }}" height="50" width="50">
 
