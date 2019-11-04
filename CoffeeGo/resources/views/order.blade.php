@@ -194,6 +194,27 @@ form{
         width: 70%;
         margin-left: 15%;
     }
+
+    .footer{
+        margin-top: 125%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 540px) {
+    .footer{
+        margin-top: 180%;
+    }
+
+    .content {
+        padding-bottom: 50px;
+    }
+
+    .button{
+        float: left;
+        position: relative;
+        margin-top: -40px;
+        margin-left: 34%;
+    }
 }
 
 </style>
