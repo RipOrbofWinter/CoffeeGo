@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use App\Prototype;
 
 class OrdersController extends Controller
 {
@@ -36,13 +37,22 @@ class OrdersController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'table' => 'required',
+            'tablenumber' => 'required',
+            'menu' => 'required',
         ]);
+
+        $prototype = new Prototype;
+        $prototype->table = $request->input('tablenumber');
+        $prototype->save();
+
         $order = new Order;
-        $order->table = $request->input('table');
+        $order->name = $request->input('name');
+        $order->age = $request->input('age');
+        $order->tablenumber = $request->input('tablenumber');
+        $order->coffee = $request->input('menu');
         $order->save();
 
-        return redirect('/welcome');
+        return redirect('/');
     }
 
     /**

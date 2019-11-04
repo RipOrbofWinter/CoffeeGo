@@ -16,6 +16,7 @@ Route::get('/welcome', 'PagesController@welcome');
 
 // interesting stuff
 Route::get('/order', 'OrdersController@index');
+Route::post('/order/send', 'OrdersController@store');
 
 
 //whatever you do dont touch these 2 lines

@@ -20,7 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->string('age');
             $table->string('tablenumber');
-            $table->string('classroom');
+            //$table->string('classroom');
             $table->timestamps();
 
         });

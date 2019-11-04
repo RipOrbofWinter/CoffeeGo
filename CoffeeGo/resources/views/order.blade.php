@@ -38,7 +38,7 @@ font-family:Helvetica;
 }
 
 .buttons{
-  float:left;
+  float: right;
 }
 
 .buttons li{
@@ -85,9 +85,8 @@ font-family:Helvetica;
 
 .button{
   float:right;
-  margin-right:50px;
   margin-top:-120px;
-  font-size:50px;
+  font-size:40px;
   border:#97552f 8px solid;
   color:#fff;
   background:#97552f;
@@ -136,6 +135,12 @@ font-size:20px;
   color:rgb(177, 169, 169);
 }
 
+
+/* maurits css */
+
+form{
+  padding: 15px;
+}
 </style>
 
 </head>
@@ -164,26 +169,29 @@ font-size:20px;
 <br>
 <br>
 <br>
-
 <div>
   <div class = "content">
-    <form class = "input">
-      <ul>
-          <li>Naam :<br>
-            <input type = "text" id = "ResultName"></li><br>
-          <li>Leeftijd :<br>
-            <input type = "number" id = "ResultAge"></li><br>
-          <li>Tafel nummer :<br>
-            <input type = "number" id = "ResultAge"></li><br>
-            <li>Menu :<br>
-            Koffie : <input type = "radio" name = "1">
-            Cappuccino : <input type = "radio" name = "1">
-            Espresso : <input type = "radio" name = "1"></li>
-          <div>
-            <input type = "submit" value = "Submit" class = "button" >
-          </div>
-      </ul>
-    </form>
+        {!! Form::open(['action' => 'OrdersController@store', 'method' => 'POST']) !!}
+        {{ csrf_field() }}
+
+          {!! Form::label('Naam :') !!}
+          {!! Form::text('name', '', ['class', 'ResultName']); !!}
+          <br>
+          {!! Form::label('Leeftijd :') !!}
+          {!! Form::number('age', 'value'); !!}
+          <br>
+          {!! Form::label('Tafelnummer :') !!}
+          {!! Form::number('tablenumber', 'value', ['min' => '1', 'max' => '10', 'style' => 'width: 134px;']); !!}
+          <br>
+          {!! Form::label('Menu :') !!}
+          {!! Form::radio('menu', 'koffie', true); !!}
+          {!! Form::label('Koffie  ') !!}
+          {!! Form::radio('menu', 'cappuccino '); !!}
+          {!! Form::label('Cappuccino  ') !!}
+          {!! Form::radio('menu', 'espresso '); !!}
+          {!! Form::label('Espresso  ') !!}
+          {!! Form::submit('Versturen', ['class' => 'button']); !!}
+        {!! Form::close() !!}
   </div>
 
   <br>
