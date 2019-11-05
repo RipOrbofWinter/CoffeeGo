@@ -15,7 +15,7 @@ class CreatePrototypesTable extends Migration
     {
         Schema::create('prototypes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('table');
+            $table->integer('table');
             $table->timestamps();
         });
     }
