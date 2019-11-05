@@ -212,6 +212,23 @@ form{
     }
 }
 
+@media (min-width: 0px) and (max-width: 390px) {
+    .images, .text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer {
+        margin-top: 210%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 359px) {
+    .footer {
+        margin-top: 245%;
+    }
+}
+
 </style>
 
 @endsection
