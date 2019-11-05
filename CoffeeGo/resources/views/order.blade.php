@@ -25,15 +25,20 @@
           {!! Form::number('age', 'value'); !!}
           <br>
           {!! Form::label('Tafelnummer :') !!}
-          {!! Form::number('tablenumber', 'value', ['min' => '1', 'max' => '10', 'style' => 'width: 134px;']); !!}
+          {!! Form::number('tablenumber', 'value', ['min' => '1', 'max' => '4', 'style' => 'width: 134px;']); !!}
           <br>
           {!! Form::label('Menu :') !!}
-          {!! Form::radio('menu', 'koffie', true); !!}
+          <!-- {!! Form::radio('menu', 'koffie', true); !!}
           {!! Form::label('Koffie  ') !!}
           {!! Form::radio('menu', 'cappuccino '); !!}
           {!! Form::label('Cappuccino  ') !!}
-          {!! Form::radio('menu', 'espresso '); !!}
-          {!! Form::label('Espresso  ') !!}
+          {!! Form::radio('menu', 'espresso '); !!} -->
+          {!! Form::radio('menu', 'water', true); !!}
+          {!! Form::label('Water  ') !!}
+          {!! Form::radio('menu', 'water '); !!}
+          {!! Form::label('Water  ') !!}
+          {!! Form::radio('menu', 'water '); !!}
+          {!! Form::label('Water  ') !!}
           {!! Form::submit('Versturen', ['class' => 'button']); !!}
         {!! Form::close() !!}
   </div>
