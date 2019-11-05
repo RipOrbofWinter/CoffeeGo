@@ -37,12 +37,6 @@
   <body >
 
 <main role="main">
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div class="container marketing">
         <div class="row">
             <br>
@@ -50,28 +44,23 @@
             <br>
             <br>
         </div>
-    <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
         <img src="{{ asset('/img/logocoffeego2.png') }}"  height="335" width="350">
         <h2>CoffeeGo</h2>
         <p>CoffeeGo maakt je leven een stuk makkelijker</p>
-      </div><!-- /.col-lg-4 -->
+      </div>
       <div class="col-lg-4">
         <img src="{{ asset('/img/koffiesmaak.jpg') }}" height="335" width="350" style="object-fit: cover;">
         <h2>Heerlijke smaak</h2>
         <p>Onze koffie gebruikt zeldzame bonen waardoor het een lekkere smaak heeft.</p>
-      </div><!-- /.col-lg-4 -->
+      </div>
       <div class="col-lg-4">
         <img src="{{ asset('/img/bestelkoffie.jpg') }}" height="335" width="350" style="object-fit: cover;">
         <h2>Bestel koffie nu</h2>
         <p><a class="btn btn-secondary" href="/order" role="button">Bestel nu &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
+      </div>
+    </div>
     <hr class="featurette-divider">
 
     <div class="row featurette">

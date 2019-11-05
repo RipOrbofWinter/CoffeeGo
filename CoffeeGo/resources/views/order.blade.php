@@ -214,26 +214,9 @@ form{
 
 </style>
 
-</head>
+@endsection
 
-<body>
-
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:rgb(115, 175, 115) !important;">
-  <!-- <nav class="navigatie"> -->
-    <a class="navbar-brand" href="#" ><img src="{{ asset('/img/logocoffeego2.png') }}" height="50" width="50"></a>
-    <div  >
-      <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/order">Bestel <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+@section('content')
 
 <br>
 <br>
@@ -278,6 +261,4 @@ form{
     <img src = "{{ asset('/img/Coffee2.png') }}" style = "width :100%; height:100%; " ></a>
   </div>
 </div>
-</body>
-
-</html>
+@endsection
