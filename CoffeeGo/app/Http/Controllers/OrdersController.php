@@ -38,6 +38,8 @@ class OrdersController extends Controller
     {
         $this->validate($request, [
             'tablenumber' => 'required',
+            'name' => 'required',
+            'age' => 'required',
             'menu' => 'required',
         ]);
 
